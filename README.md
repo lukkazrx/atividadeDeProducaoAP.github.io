@@ -6,7 +6,7 @@
 ### Informações do Código-Fonte feito em Linguagem C:
 - O Código tem como objetivo realizar cálculo baseado na entrada que o usuário der nele.
 - O Código possui variáveis legíveis facilitando o entendimento e o objetivo do algoritmo.
-- O Código possui variáveis do tipo Int e Float.
+- O Código possui variáveis do tipo Int e Double.
 - O Código possui estruturas de seleção e repetição que são acionadas conforme o usuário interagem com o programa.
 - O Código possui comentários pertinentes a fim de explicar qual o motivo da existência daquela parte do código.
 ## Prints do código funcionando:
