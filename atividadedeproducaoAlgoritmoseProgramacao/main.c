@@ -11,7 +11,6 @@
   - conteúdo utilizado para pesquisar a sintaxe da linguagem:
     1) https://devdocs.io/c/
     2) e-book da disciplina
-
 */
 
 int main(void) {
@@ -23,7 +22,7 @@ int main(void) {
   printf("Número de matrícula: 202220849\n\n");
 
     //declaração de variáveis:
-  float number1, number2, squareRoot1, squareRoot2, addUp, subtraction, multiply, div, toThePower;
+  double number1, number2, squareRoot1, squareRoot2, addUp, subtraction, multiply, div, toThePower;
   int operation;
 
     //Escolha da operação que o usuário deseja
@@ -47,9 +46,9 @@ int main(void) {
     //Verificador de números menores que 1
   do  {
     printf("\nDigite o primeiro número: ");
-    scanf("%f", &number1);
+    scanf("%lf", &number1);
     printf("Digite o segundo número: ");
-    scanf("%f", &number2);
+    scanf("%lf", &number2);
 
     //mensagem caso o número seja menor que 1
       if (number1 < 1 || number2 < 1) {
@@ -62,21 +61,21 @@ int main(void) {
     case 1:
         squareRoot1 = sqrt(number1); //operação de raiz quadrada 1
         squareRoot2 = sqrt(number2); //operação de raiz quadrada 2
-        printf("\nA raiz quadrada dos números inseridos é: %.2f e %.2f.", squareRoot1, squareRoot2);
+        printf("\nA raiz quadrada dos números inseridos é: %.2lf e %.2lf.", squareRoot1, squareRoot2);
         printf("\nObrigado por utilizar o programa.");
         break;
 
     case 2:
         addUp = number1 + number2; //operação de soma
-        printf("\nA Soma entre os números inseridos é: %.2f.", addUp);
+        printf("\nA Soma entre os números inseridos é: %.2lf.", addUp);
         subtraction = number1 - number2; //operação de subtração
-        printf("\nA subtração dos números inseridos é: %.2f.", subtraction);
+        printf("\nA subtração dos números inseridos é: %.2lf.", subtraction);
         multiply = number1 * number2; //operação de multiplicação
-        printf("\nA multiplicação entre os números é: %.2f.", multiply);
+        printf("\nA multiplicação entre os números é: %.2lf.", multiply);
         div = number1 / number2; //operação de divisão
-        printf("\nA divisão entre os números é: %.2f.", div);
+        printf("\nA divisão entre os números é: %.2lf.", div);
         toThePower = pow(number1, number2); //operação de potencia
-        printf("\nA potência dos números é: %.2f.", toThePower);
+        printf("\nA potência dos números é: %.2lf.", toThePower);
         printf("\nObrigado por utilizar o programa.");
         break;
 
